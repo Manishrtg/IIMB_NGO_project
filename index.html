@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Education: Transforming Schools</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/">Support Education</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#projects">Our Projects</a></li>
+                <li><a href="#donate">Donate</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Transforming Schools, One Step at a Time</h1>
+        <p>Your contribution helps us bring necessary resources to schools in need.</p>
+        <button onclick="window.location.href='#donate'">Make a Donation</button>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2>About Our Mission</h2>
+        <p>At "Support Education," we are committed to empowering the next generation of leaders by ensuring that every child, regardless of location or economic background, has access to quality education. We are currently focusing on schools in the Karnataka district, where we identify areas that lack proper infrastructure, technology, and teacher support.</p>
+
+        <p>Our mission is not just about providing material resources, but about creating a sustainable change by fostering a culture of education where all schools are equipped to offer quality education to every child. With your support, we are making a lasting impact.</p>
+
+        <div class="about-image">
+            <img src="school_research.jpg" alt="School Research">
+        </div>
+    </section>
+
+    <!-- Our Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Our Current Projects</h2>
+        <p>We have identified key areas where schools are in dire need of support. Our approach is data-driven and research-based, ensuring that each project is tailored to meet the specific needs of the schools. Here are some of the major ongoing projects:</p>
+        
+        <div class="project-cards">
+            <div class="project-card">
+                <img src="building.jpg" alt="Infrastructure">
+                <h3>Infrastructure Development</h3>
+                <p>Many schools in rural areas lack proper infrastructure. Some classrooms are overcrowded, while others lack basic facilities such as toilets, electricity, or drinking water. Our goal is to provide funding for the construction of additional classrooms, sanitation facilities, and playgrounds that foster a healthy and safe learning environment for students.</p>
+            </div>
+            <div class="project-card">
+                <img src="technology.jpg" alt="Technology">
+                <h3>Technology in Education</h3>
+                <p>In today’s digital world, technology plays a crucial role in shaping education. However, many schools still lack computers, projectors, or internet connectivity. Our initiative aims to equip schools with the necessary tools, including smart boards, tablets, and computers, while also providing teachers with training on how to integrate technology into their teaching methods effectively.</p>
+            </div>
+            <div class="project-card">
+                <img src="teacher_training.jpg" alt="Teacher Training">
+                <h3>Teacher Training Programs</h3>
+                <p>Teachers are at the heart of any educational system. Unfortunately, many teachers in underfunded schools have limited access to professional development. Through our teacher training programs, we provide workshops and certifications in modern teaching techniques, child psychology, and classroom management, ensuring that teachers are equipped to handle diverse classroom settings and needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donate" class="donate">
+        <h2>Support Our Cause</h2>
+        <p>Your generous donations help us make a real difference in the lives of students and teachers. Every contribution, whether large or small, directly impacts the quality of education provided to schools in need. Join us in making education accessible and enriching for every child!</p>
+
+        <p>Here’s how your donation will be used:</p>
+        <ul>
+            <li><strong>₹5,000</strong> can provide basic classroom supplies like books, stationary, and learning tools for 50 students.</li>
+            <li><strong>₹20,000</strong> can help build a sanitation facility for a school with over 200 students.</li>
+            <li><strong>₹50,000</strong> can fund the installation of smart boards and digital learning tools in a classroom.</li>
+        </ul>
+
+        <button id="donateButton">Donate Now</button>
+    </section>
+
+    <!-- Payment Modal for Donations -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <h3>Complete Your Donation</h3>
+            <form id="payment-form">
+                <input type="text" id="donor-name" placeholder="Your Name" required>
+                <input type="email" id="donor-email" placeholder="Your Email" required>
+                <input type="number" id="donation-amount" placeholder="Donation Amount (₹)" required>
+                <button type="submit" id="razorpay-button">Proceed to Payment</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Impact Section -->
+    <section id="impact" class="impact">
+        <h2>Our Impact</h2>
+        <p>We’ve made incredible progress, but there’s still so much more to do. With the help of our donors, partners, and volunteers, we’ve been able to accomplish the following:</p>
+
+        <div class="impact-stats">
+            <div class="stat">
+                <h3>₹1,00,000+</h3>
+                <p>Donations Collected</p>
+            </div>
+            <div class="stat">
+                <h3>500+</h3>
+                <p>Schools Supported</p>
+            </div>
+            <div class="stat">
+                <h3>20+</h3>
+                <p>Ongoing Projects</p>
+            </div>
+        </div>
+
+        <p>As we continue our journey, our long-term vision is to expand our efforts nationwide. We plan to reach more states and help thousands of schools across the country by improving their infrastructure, teaching standards, and learning resources. Your support can help us bring these changes to every corner of India.</p>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <p>We'd love to hear from you! Whether you have a question, feedback, or want to volunteer, please don’t hesitate to reach out.</p>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Support Education. All rights reserved.</p>
+    </footer>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
